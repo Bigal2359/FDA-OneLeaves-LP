@@ -1,0 +1,87 @@
+.l-container {
+	height: 100%;
+	width: 100%;
+
+	.modal-active & {
+		bottom: 0;
+		height: auto;
+		overflow: hidden;
+		position: fixed;
+	}
+}
+
+.l-header {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	.content {
+		left: 0;
+	    margin: 0 auto;
+	    position: absolute;
+	    right: 0;
+	    top: 14%;
+
+	    @include media-query(tablet) {
+	    	margin-bottom: 100px;
+	    	position: relative;
+	    	top: auto;
+	    }
+
+	    @media only screen 
+		    and (device-width : 414px) 
+		    and (device-height : 896px) 
+		    and (-webkit-device-pixel-ratio : 2)
+		    and (orientation : landscape) {
+	    	margin-bottom: 10px;
+		}
+
+		@media only screen 
+		    and (device-width : 375px) 
+		    and (device-height : 812px) 
+		    and (-webkit-device-pixel-ratio : 3)
+		    and (orientation : landscape) {
+	    	margin-bottom: 10px;
+		}
+		
+		@media only screen 
+		    and (device-width : 414px) 
+		    and (device-height : 896px) 
+		    and (-webkit-device-pixel-ratio : 3)
+		    and (orientation : landscape) {
+	    	margin-bottom: 10px;
+		}
+	}
+}
+
+.l-description {
+	background: url('../img/main-bkgd-mobile.png') no-repeat center top;
+	background-size: cover;
+	margin-top: -65%;
+	padding: 65% 0 50px;
+
+	@include media-query(tablet) {
+		background: url('../img/main-bkgd-desktop.png') no-repeat center top;
+		background-size: cover;
+		margin-top: -25%;
+		padding: 30% 0 110px;
+	}
+
+	.content {
+		margin: 0 auto;
+		max-width: 900px;
+	}
+}
+
+.l-trailer {
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.l-footer {
+	padding-top: 50px;
+
+	@include media-query(tablet) {
+		padding-top: 150px;
+	}
+}

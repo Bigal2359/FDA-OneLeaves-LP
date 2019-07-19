@@ -1,0 +1,15 @@
+@function get-breakpoint($canvas) {
+  $rtn: 0;
+  @if $canvas == tablet {
+    $rtn: $tablet;
+  } @else if $canvas == desktop {
+    $rtn: $desktop;
+  }
+  @return $rtn;
+}
+
+@mixin media-query($canvas) {
+  @media all and (min-width: get-breakpoint($canvas)) {
+    @content;
+  }
+}

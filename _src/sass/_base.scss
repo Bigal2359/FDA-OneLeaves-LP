@@ -1,0 +1,82 @@
+// ==========================================================================
+// JB reset and custom Normalize (3.0.3: Chrome, FF, Safari 6+, IE 8+)
+// ==========================================================================
+
+@import 'vendor/reset-jb-normalize-0.1.0';
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #1b1b1b;
+	color: #fff;
+	font-family: $font-base;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: 0 0 20px;
+	text-align: center;
+	width: 100%;
+
+	img {
+		max-width: 400px;
+		width: 85%;
+
+		@include media-query(tablet) {
+			max-width: 572px;
+		}
+	}
+}
+
+h2 {
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	margin-bottom: 25px;
+
+	@include media-query(tablet) {
+		font-size: 30px;
+		margin-bottom: 45px;
+	}
+
+	&.subhead {
+		padding: 0 10px;
+
+		@include media-query(tablet) {
+			margin-bottom: 0;
+			padding: 0 10%;
+		}
+	}
+
+	img {
+		display: inline-block;
+		height: 23px;
+
+		@include media-query(tablet) {
+			height: 42px;
+		}
+	}
+}
+
+p {
+	letter-spacing: 0.1em;
+	margin: 0 auto 20px;
+	max-width: 525px;
+	padding: 0 25px;
+
+	@include media-query(tablet) {
+		font-size: 24px;
+		margin-bottom: 45px;
+		padding: 0;
+	}
+
+	@media (min-width: 850px) {
+		max-width: 720px;
+	}
+}
+
+

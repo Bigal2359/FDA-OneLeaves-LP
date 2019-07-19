@@ -1,0 +1,35 @@
+.footer {
+
+	&-links {
+		background: #fff;
+		overflow: hidden;
+		padding: 10px 20px;
+
+		ul {
+			list-style-type: none;
+			margin: 0 auto;
+			max-width: 480px;
+			padding: 0;
+		}
+
+		li {
+			color: #000;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 0.15em;
+
+			@include media-query(tablet) {
+				font-size: 20px;
+			}
+		}
+
+		li:first-child {
+			float: left;
+		}
+
+		li:last-child {
+			float: right;
+		}
+	}
+}

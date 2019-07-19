@@ -1,0 +1,79 @@
+.cta {
+	margin: 0 auto 80px;
+	overflow: hidden;
+	width: 288px;
+
+	@include media-query(tablet) {
+		margin-bottom: 125px;
+		width: 500px;
+	}
+
+	.l-header & {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+
+		@include media-query(tablet) {
+			bottom: auto;
+			margin-bottom: 0;
+			position: relative;
+		}
+
+		h2 {
+			color: #dfdddd;
+		}
+	}
+
+	&-btns {
+
+		.l-footer & {
+			margin-bottom: 25px;
+			overflow: hidden;
+
+			@include media-query(tablet) {
+				margin-bottom: 45px;
+			}
+		}
+
+
+		a {
+
+			&:first-child {
+				float: left;
+			}
+
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+
+	.xbox {
+		width: 124px;
+
+		@include media-query(tablet) {
+			width: 211px;
+		}
+	}
+
+	.windows {
+		width: 130px;
+
+		@include media-query(tablet) {
+			width: 235px;
+		}
+	}
+
+	img {
+		color: #fff;
+		font-size: 20px;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	.esrb {
+		max-width: 150px;
+		width: 40%;
+	}
+}

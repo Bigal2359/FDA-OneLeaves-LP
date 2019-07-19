@@ -1,0 +1,117 @@
+# Default application configuration that all configurations inherit from.
+linters:
+  BorderZero:
+    enabled: true
+
+  CapitalizationInSelector:
+    enabled: true
+
+  ColorKeyword:
+    enabled: true
+
+  ColorVariable:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: true
+
+  DuplicateProperty:
+    enabled: true
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+
+  EmptyRule:
+    enabled: true
+
+  HexFormat:
+    enabled: true
+
+  IdWithExtraneousSelector:
+    enabled: true
+
+  Indentation:
+    enabled: false
+    width: 2
+
+  LeadingZero:
+    enabled: false
+
+  NameFormat:
+    enabled: true
+
+  NestingDepth:
+    max_depth: 4 #override
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: [behavior]
+
+  PseudoElement:
+    enabled: false
+
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: true
+    allow_element_with_class: true
+    allow_element_with_id: true
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4 #override
+
+  SelectorFormat:
+    ignored_types: [class]
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SortedProperties:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceBeforeBrace:
+    enabled: true
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes # or double_quotes
+
+  TrailingSemicolonAfterPropertyValue:
+    enabled: true
+
+  UrlQuotes:
+    enabled: true
+
+  VendorPrefix:
+    enabled: false
+
+  ZeroUnit:
+    enabled: true
+
+  Compass::*:
+    enabled: false
